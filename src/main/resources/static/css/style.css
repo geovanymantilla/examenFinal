@@ -1,0 +1,196 @@
+*
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{ color: black;}
+
+body
+{
+    align-items: center;
+    background-color: #ffc135;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    min-height: 100vh;
+}
+
+.imgqr
+{
+    margin: 0 auto;
+    width: 150px;
+}
+
+.imgqr img
+{
+    width: 100%;
+}
+
+.container
+{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.container2
+{
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.modal
+{
+    padding: 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-icono
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.title-icono i
+{
+    font-size: 30px;
+    color: orange;
+}
+
+.title-icono p
+{
+    padding-left: 20px;
+    font-size: 22px;
+    color: orange;
+}
+
+.campostextos div
+{
+    display: flex;
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.campostextos div input
+{
+    border: 1px solid #424242;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.imagen
+{
+    width: 500px;
+    min-width: 250px;
+}
+
+.imagen img
+{
+    width: 100%;
+}
+
+.container-form
+{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    margin-left: 3em;
+    text-align: center;
+    width: 300px;
+}
+
+.container-form form
+{
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container-form form div
+{
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.container-form form div input
+{
+    border: 1px solid #424242;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.boton
+{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 7px 0;
+    margin-top: 15px;
+    color: white;
+    background-color: orange;
+    width: 80%;
+    transition: .5s;
+}
+
+.boton:hover{
+    background-color: black;
+}
+
+.options
+{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 250px;
+    height: 300px;
+    margin-left: 3em;
+    text-align: center;
+    width: 300px;
+}
+
+.options-grid
+{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.options-grid a{
+
+}
+
+.options-grid a i
+{
+    font-size: 40px;    
+}
+
+.options-grid a p
+{
+    padding: 10px 0;
+}
+
+.options button
+{
+    margin-top: 10px;
+}

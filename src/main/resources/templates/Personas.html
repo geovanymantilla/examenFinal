@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0dc3b1d201.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container2">
+        <div class="modal">
+            <form action="" method="">
+                <div class="title-icono">
+                    <i class="fas fa-users"></i>
+                    <p>Personas</p>
+                </div>
+                <li style="padding: 20px;">Vive con personas de alguna de estas <br> caracteristicas</li>
+                <div class="campostextos">
+                    <div>
+                        <p>Mayores de 60 años: </p>
+                        <input type="checkbox" name="mayores" value="mayores" checked>
+                    </div>
+                    <div>
+                        <p>Menores de 15 años: </p>
+                        <input type="checkbox" name="menores" value="menores" checked>
+                    </div>
+                    <div>
+                        <p>Del sector de la salud: </p>
+                        <input type="checkbox" name="menores" value="menores" checked>
+                    </div>
+                    <li style="padding: 20px;">Contactar en caso de emergencia</li>
+                    <div>
+                        <p>Nombre contacto: </p>
+                        <input type="text" id="nombrecontacto" name="nombrecontacto">
+                    </div>
+                    <div>
+                        <p>Telefono contacto: </p>
+                        <input type="text" id="telcontacto" name="telcontacto">
+                    </div>
+                </div>
+                <button class="boton" type="submit">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

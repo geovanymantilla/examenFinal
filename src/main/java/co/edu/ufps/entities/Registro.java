@@ -149,19 +149,19 @@ public class Registro implements Serializable {
 		this.accesos = accesos;
 	}
 
-//	public Acceso addAcceso(Acceso acceso) {
-//		getAccesos().add(acceso);
-//		acceso.setRegistroBean(this);
-//
-//		return acceso;
-//	}
-//
-//	public Acceso removeAcceso(Acceso acceso) {
-//		getAccesos().remove(acceso);
-//		acceso.setRegistroBean(null);
-//
-//		return acceso;
-//	}
+	public Acceso addAcceso(Acceso acceso) {
+		getAccesos().add(acceso);
+		acceso.setRegistroBean(this);
+
+		return acceso;
+	}
+
+	public Acceso removeAcceso(Acceso acceso) {
+		getAccesos().remove(acceso);
+		acceso.setRegistroBean(null);
+
+		return acceso;
+	}
 
 	public Basico getBasico() {
 		return this.basico;

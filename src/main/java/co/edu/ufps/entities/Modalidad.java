@@ -50,18 +50,18 @@ public class Modalidad implements Serializable {
 		this.basicos = basicos;
 	}
 
-//	public Basico addBasico(Basico basico) {
-//		getBasicos().add(basico);
-//		basico.setModalidadBean(this);
-//
-//		return basico;
-//	}
-//
-//	public Basico removeBasico(Basico basico) {
-//		getBasicos().remove(basico);
-//		basico.setModalidadBean(null);
-//
-//		return basico;
-//	}
+	public Basico addBasico(Basico basico) {
+		getBasicos().add(basico);
+		basico.setModalidadBean(this);
+
+		return basico;
+	}
+
+	public Basico removeBasico(Basico basico) {
+		getBasicos().remove(basico);
+		basico.setModalidadBean(null);
+
+		return basico;
+	}
 
 }

@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Entity
 @Table(name="eps")
-@NamedQuery(name="Ep.findAll", query="SELECT e FROM Ep e")
+@NamedQuery(name="Eps.findAll", query="SELECT e FROM Ep e")
 public class Eps implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -21,7 +21,7 @@ public class Eps implements Serializable {
 	private String descripcion;
 
 	//bi-directional many-to-one association to Basico
-	@OneToMany(mappedBy="ep")
+	@OneToMany(mappedBy="eps")
 	private List<Basico> basicos;
 
 	public Eps() {
@@ -51,18 +51,18 @@ public class Eps implements Serializable {
 		this.basicos = basicos;
 	}
 
-//	public Basico addBasico(Basico basico) {
-//		getBasicos().add(basico);
-//		basico.setEp(this);
-//
-//		return basico;
-//	}
-//
-//	public Basico removeBasico(Basico basico) {
-//		getBasicos().remove(basico);
-//		basico.setEp(null);
-//
-//		return basico;
-//	}
+	public Basico addBasico(Basico basico) {
+		getBasicos().add(basico);
+		basico.setEp(this);
+
+		return basico;
+	}
+
+	public Basico removeBasico(Basico basico) {
+		getBasicos().remove(basico);
+		basico.setEp(null);
+
+		return basico;
+	}
 
 }

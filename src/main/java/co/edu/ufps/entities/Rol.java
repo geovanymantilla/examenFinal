@@ -50,18 +50,18 @@ public class Rol implements Serializable {
 		this.usuarios = usuarios;
 	}
 
-//	public Usuario addUsuario(Usuario usuario) {
-//		getUsuarios().add(usuario);
-//		usuario.setRolBean(this);
-//
-//		return usuario;
-//	}
-//
-//	public Usuario removeUsuario(Usuario usuario) {
-//		getUsuarios().remove(usuario);
-//		usuario.setRolBean(null);
-//
-//		return usuario;
-//	}
+	public Usuario addUsuario(Usuario usuario) {
+		getUsuarios().add(usuario);
+		usuario.setRolBean(this);
+
+		return usuario;
+	}
+
+	public Usuario removeUsuario(Usuario usuario) {
+		getUsuarios().remove(usuario);
+		usuario.setRolBean(null);
+
+		return usuario;
+	}
 
 }
